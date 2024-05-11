@@ -1,1 +1,4 @@
-const drop = (arr, n = 1) => arr.slice(n);
+function findKthLargest(nums, k) {
+  nums.sort((a, b) => b - a);
+  return nums[k - 1];
+}
