@@ -1,3 +1,9 @@
-function countVowels(str) {
-  return str.match(/[aeiou]/gi).length;
+function squareDigits(num) {
+  return parseInt(
+    num
+      .toString()
+      .split("")
+      .map((digit) => digit ** 2)
+      .join(""),
+  );
 }
